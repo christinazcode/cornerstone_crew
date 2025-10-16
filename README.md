@@ -1,9 +1,9 @@
 # cornerstone-crew-private
 ## Team
 * [Christina Zhong](https://www.linkedin.com/in/zhongchristina/)
-* Pavan
+* [Pavan Baruri](https://www.linkedin.com/in/pavan-baruri/)
 * [Jeremy Bierly](https://www.linkedin.com/in/jeremybierly/)
-* Davey
+* [Dave Kanter](https://www.linkedin.com/in/kanter/)
 * [Chaitanya Addanki](https://www.linkedin.com/in/chaitanya-addanki/)
 
 ## Overview
