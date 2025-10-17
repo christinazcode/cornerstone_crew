@@ -12,18 +12,24 @@
 #### 1. Anticipate Need
 * Right vehicles are not in the right place
 ##### Desired Outcome
-<mark>TODO<mark>
+* Right vehicle type at right location/time
+* Proactive fleet repositioning
+* Reduced idle time and wasted resources
 #### 2. Minimize battery outage
 * Electric vehicles running out of charge
   * How to anticipate when to switch batteries for electric vehicles?
 ##### Desired Outcome
-<mark>TODO<mark>
+* Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0
+* Maintain appropriate battery inventory
+  * Predict / suggest amount of battery packs fleet needs to carry
+  * Predit / suggest battery inventory at service centers
+* Optimize route planning for fleet (battery swap) 
 #### 3. Increase Users
 * Increase customer usage
   * Customers to use our service more frequently
   * Customers to use our service for daily commutes
 ##### Desired Outcome
-<mark>TODO<mark>
+* Increase user base by 30% YoY
 ## High Level Functional Requirements
 ### Booking
 * Ability to browse and reserve vehicles
