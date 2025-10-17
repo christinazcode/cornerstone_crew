@@ -58,6 +58,10 @@
 * The platform must support multiple currencies for international payments.
 * Each country will start with approximately 5,000 bikes, 5,000 scooters, 200 cars, and 200 vans, with most vehicles concentrated around city centers.
 * Service will operate through out EU, we need to plan for scaling up
+
+## Vehicle Rental Flow
+[Vehicle Rental Flow](diagram/rental_flow.md) 
+
 ## How To
 ### Desired Outcome 1...
 #### ADR
