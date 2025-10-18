@@ -30,6 +30,9 @@
   * Customers to use our service for daily commutes
 ##### Desired Outcome
 * Increase user base by 30% YoY
+  * Social media marketing
+  * AI-driven targeted marketing
+* Quality-focused retention (vs. volume acquisition)
 ## High Level Functional Requirements
 ### Booking
 * Ability to browse and reserve vehicles
