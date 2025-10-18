@@ -9,30 +9,12 @@
 ## Overview
 ### About MobilityCorp
 ### Challenges
-#### 1. Anticipate Need
-* Right vehicles are not in the right place
-##### Desired Outcome
-* Right vehicle type at right location/time
-* Proactive fleet repositioning
-* Reduced idle time and wasted resources
-#### 2. Minimize battery outage
-* Electric vehicles running out of charge
-  * How to anticipate when to switch batteries for electric vehicles?
-##### Desired Outcome
-* Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0
-* Maintain appropriate battery inventory
-  * Predict / suggest amount of battery packs fleet needs to carry
-  * Predit / suggest battery inventory at service centers
-* Optimize route planning for fleet (battery swap) 
-#### 3. Increase Users
-* Increase customer usage
-  * Customers to use our service more frequently
-  * Customers to use our service for daily commutes
-##### Desired Outcome
-* Increase user base by 30% YoY
-  * Social media marketing
-  * AI-driven targeted marketing
-* Quality-focused retention (vs. volume acquisition)
+| Challenge | Details | Desired Outcome |
+|:--------  |:------- |:--------------- |
+| Anticipate Need | Right vehicles are not in the right place | <ul> <li>Right vehicle type at right location/time <li>Proactive fleet repositioning <li>Reduced idle time and wasted resources<ul>|
+| Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0 <li>Predict / suggest amount of battery packs fleet needs to carry <li>Predit / suggest battery inventory at service centers<li>Optimize route planning for fleet (battery swap) <ul>|
+| Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 30% YoY <li>Market right product to right customer segments <li> Quality-focused retention (vs. volume acquisition)<ul>|
+
 ## High Level Functional Requirements
 ### Booking
 * Ability to browse and reserve vehicles
