@@ -1,3 +1,6 @@
+Google Meet Link
+https://meet.google.com/ssv-vsvn-tfr
+
 ## 10/16/2025
 
 ## **What: Problem Statement**
@@ -71,3 +74,4 @@ Build a vehicle sharing platform that optimizes fleet distribution and utilizati
 - Mobile app + back-office app scope?
 - Event data integration (external APIs)?
 - Analytics platform for battery/usage patterns?
+
