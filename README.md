@@ -53,6 +53,9 @@
 ## Vehicle Rental Flow
 [Vehicle Rental Flow](diagram/rental_flow.md) 
 
+## Architecture Diagram
+[Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
+
 ## How To
 ### Desired Outcome 1...
 #### ADR
