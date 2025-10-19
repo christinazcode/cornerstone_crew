@@ -11,9 +11,9 @@
 ### Challenges
 | Challenge | Details | Desired Outcome |
 |:--------  |:------- |:--------------- |
-| Anticipate Need | Right vehicles are not in the right place | <ul> <li>Right vehicle type at right location/time <li>Proactive fleet repositioning <li>Reduced idle time and wasted resources<ul>|
-| Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0 <li>Predict / suggest amount of battery packs fleet needs to carry <li>Predit / suggest battery inventory at service centers<li>Optimize route planning for fleet (battery swap) <ul>|
-| Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 30% YoY <li>Market right product to right customer segments <li> Quality-focused retention (vs. volume acquisition)<ul>|
+| Anticipate Need | Right vehicles are not in the right place | <ul> <li>Right vehicle type at right location/time [Invenotry Management](diagram/CA-Management-InvMgmt.jpeg) <li>Proactive fleet repositioning <li>Reduced idle time and wasted resources<ul>|
+| Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0 [Flow](diagram/CA-Returns-Flow.jpeg) <li>Predict / suggest amount of battery packs fleet needs to carry <li>Predit / suggest battery inventory at service centers<li>Optimize route planning for fleet (battery swap) <ul>|
+| Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 30% YoY <li>Market right product to right customer segments [Notifications](diagram/CA-Notifications.jpeg) <li> Quality-focused retention (vs. volume acquisition)<ul>|
 
 ## High Level Functional Requirements
 ### Booking
