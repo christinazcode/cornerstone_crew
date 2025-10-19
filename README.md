@@ -55,7 +55,7 @@
 
 ## Architecture Diagram
 * [Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
-* [Notifications Architecture](diagram/Katas2025-Notifications-Architecture.png)
+* [Notifications Architecture](diagram/CA-Katas2025-Notifications-Architecture.png)
 ## How To
 ### Desired Outcome 1...
 #### ADR
