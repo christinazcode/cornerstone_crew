@@ -43,6 +43,8 @@
 * Ability for staff to know which parking bays to visit to swap battery packs for bikes and scooters
 * Ability for staff to be notified to move vehicles to popular spots (anticipate need)
 * Ability for customers to swap battery during their rental period for extra charge
+### Loss Prevention
+* <mark>TODO</mark>
 ## Non-Functional Requirements
 * The system must receive data from vehicles at least every 30 seconds; if a different interval is proposed, the team must explain why it's more appropriate.
 * The platform must support multiple languages for user interfaces.
