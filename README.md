@@ -54,8 +54,8 @@
 [Vehicle Rental Flow](diagram/rental_flow.md) 
 
 ## Architecture Diagram
-[Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
-
+* [Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
+* [Notifications Architecture](diagram/Katas2025-Notifications-Architecture.png)
 ## How To
 ### Desired Outcome 1...
 #### ADR
