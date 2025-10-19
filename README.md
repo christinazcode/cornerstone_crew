@@ -56,6 +56,7 @@
 ## Architecture Diagram
 * [Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
 * [Notifications Architecture](diagram/CA-Katas2025-Notifications-Architecture.png)
+  * Batch processing vs Real Time notifications?
 ## How To
 ### Desired Outcome 1...
 #### ADR
