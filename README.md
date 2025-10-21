@@ -52,8 +52,11 @@
 * Each country will start with approximately 5,000 bikes, 5,000 scooters, 200 cars, and 200 vans, with most vehicles concentrated around city centers.
 * Service will operate through out EU, we need to plan for scaling up
 
-## Vehicle Rental Flow
-[Vehicle Rental Flow](diagram/rental_flow.md) 
+## [Architecture Characteristics](diagram/architecture_characteristics.pdf) 
+Low Latency: The system must provide an estimated hourly rate for a rental request within 30 seconds of the user's query.
+Strong Consistency (or Reservation Lock): A single rental request must be matched with exactly one available vehicle. This match must be exclusively held (or locked) for that user for 1 minute, during which time the user can accept or decline the offer.
+Scalability: The system must be capable of processing 100 transactions per second (TPS), specifically for location updates. It must also be designed to support a 30% growth in this capacity annually for the next five years.
+## [Vehicle Rental Flow](diagram/rental_flow.md) 
 
 ## Architecture Diagram
 * [Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
