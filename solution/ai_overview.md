@@ -1,6 +1,6 @@
 ## AI Overview
 
-![AI Circle](diagram/ai_circle.jpg)
+![AI Circle](../diagram/ai_circle.jpg)
 
 **AI**: Problem-solving by computers 
 
