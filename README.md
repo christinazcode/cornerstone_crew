@@ -8,6 +8,7 @@
 
 ## Overview
 ### About MobilityCorp
+MobilityCorp is a one stop last mile eco friendly transport rental company operating in Europe. They rent out E-Bikes, E-Scooters, Electric Vans and Cars. Currently operating mostly in cities, they are aiming to expand coverage into suburban areas. While currently successful, MobilityCorp has a big challenge ahead if they want to scale and expand their business. They are unsure of how to manage a potential surge in vehicle and battery inventory, how to manage effectively charge their batteries and make sure the vehicles do not run out of charge during rental and how to minimize loss of vehicles as they look to expand their operations across European cities. They are looking to re-architect their mobile application and backend software to meet these challenges.
 ### Challenges
 | Challenge | Details | Desired Outcome |
 |:--------  |:------- |:--------------- |
