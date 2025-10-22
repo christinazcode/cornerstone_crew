@@ -1,4 +1,4 @@
-# cornerstone-crew-private
+![Team Header](diagram/Header_Image.png "Team Image")
 ## Team
 * [Christina Zhong](https://www.linkedin.com/in/zhongchristina/)
 * [Pavan Baruri](https://www.linkedin.com/in/pavan-baruri/)
