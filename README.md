@@ -83,7 +83,6 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 * [Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
 * [Notifications Architecture](diagram/CA-Katas2025-Notifications-Architecture.png)
   * Batch processing vs Real Time notifications?
-* [Inventory Prediction Architecture](diagram/CA-Katas2025-Inv.Mgmt.png)
 
 ## AI Components
 ### Context
@@ -96,7 +95,17 @@ When MiniCorp starts, we can build a simple interface to guide the rental flow s
 
 ### Agentic Chatbots for Customer Service and Internal Work
 As we continue to accumulate data from our business, we can implement chatbots for internal and external users. The internal chatbot helps our employees with onboarding and learning our business. The external chatbot can be part of customer service to help answer users' questions and guide them through the rental journey. These chatbots will be agents that have access to both the vector database of our context and other public APIs to enhance the user journey. For instance, once a user asks a question, the agent can search Google to get information, call our pricing API to get a price estimation for a rental, and call the Google Calendar API to add the booking as an event in the user's calendar.
-  
+### Inventory Management Prediction
+![Inventory Management](diagram/CA-Katas2025-Inv.Mgmt.png "Inventory Management")
+The inventory management prediction model will be built as an aid to the back office to solve the "Anticipate Need" challenge. This model will help predict what vehicle types, their quantities, locations at which they need to be stationed along with the date and time. 
+
+The model will be trained on booking information (vehicle types, locations, date and time of pick up) and related dimensions like weather and events at the time of pick up and during the duration of the rental. When a return is initiated, this information is pulled and used to train the model. 
+
+To predict future demand, the prediction service will query future booking information, events and weather information and use the model to predict which vehicles need to be located where and when.
+
+#### Algorithm
+* Start off with <b>LightGBM</b> to build an MVP
+* Switch to <b>TFT</b> once we collect a large amount of data
 ## How To
 ### Desired Outcome 1...
 #### ADR
