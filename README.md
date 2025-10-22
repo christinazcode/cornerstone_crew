@@ -3,7 +3,13 @@
 - [Overview](#overview)
   - [Team](#team)
 - [Problem definition](#problem-definition)
-  - [About MobilityCorp](#about-mobilitycorp)    
+  - [About MobilityCorp](#about-mobilitycorp)
+  - [Challenges](#challenges)
+  - [High Level Functional Requirements](#high-level-requirements)
+- [Solution](#solution)
+  - [Architecture characteristics](#architecture-characteristics)
+  - [Vehicle Rental Flow](#vehicle-rental-flow)
+  - [Architecture Diagram](#architecture-diagram)
 
 ## Overview
 ## Team
@@ -22,8 +28,6 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 | Anticipate Need | Right vehicles are not in the right place | <ul> <li>Right vehicle type at right location/time [Inventory Management](diagram/CA-Management-InvMgmt.jpeg) <li>Proactive fleet repositioning <li>Reduced idle time and wasted resources<ul>|
 | Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0 [Flow](diagram/CA-Returns-Flow.jpeg) <li>Predict / suggest amount of battery packs fleet needs to carry <li>Predit / suggest battery inventory at service centers<li>Optimize route planning for fleet (battery swap) <ul>|
 | Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 15% YoY <li>Market right product to right customer segments [Notifications](diagram/CA-Notifications.jpeg) <li> Quality-focused retention (vs. volume acquisition)<ul>|
-
-## [AI Overview](solution/ai_overview.md) 
 
 ## High Level Functional Requirements
 ### Booking
@@ -62,6 +66,7 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 * Each country will start with approximately 5,000 bikes, 5,000 scooters, 200 cars, and 200 vans, with most vehicles concentrated around city centers.
 * Service will operate through out EU, we need to plan for scaling up
 
+# Solution
 ## [Architecture Characteristics](diagram/architecture-characteristics.pdf) 
 * **Low Latency**: The system must provide an estimated hourly rate for a rental request within 30 seconds of the user's query.
 * **Strong Consistency (or Reservation Lock)**: A single rental request must be matched with exactly one available vehicle. This match must be exclusively held (or locked) for that user for 1 minute, during which time the user can accept or decline the offer.
@@ -83,3 +88,4 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 #### ADR
 <mark>TODO<mark>
 
+## [AI Overview](solution/ai_overview.md) 
