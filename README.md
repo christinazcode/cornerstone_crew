@@ -14,7 +14,7 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 |:--------  |:------- |:--------------- |
 | Anticipate Need | Right vehicles are not in the right place | <ul> <li>Right vehicle type at right location/time [Inventory Management](diagram/CA-Management-InvMgmt.jpeg) <li>Proactive fleet repositioning <li>Reduced idle time and wasted resources<ul>|
 | Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0 [Flow](diagram/CA-Returns-Flow.jpeg) <li>Predict / suggest amount of battery packs fleet needs to carry <li>Predit / suggest battery inventory at service centers<li>Optimize route planning for fleet (battery swap) <ul>|
-| Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 30% YoY <li>Market right product to right customer segments [Notifications](diagram/CA-Notifications.jpeg) <li> Quality-focused retention (vs. volume acquisition)<ul>|
+| Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 15% YoY <li>Market right product to right customer segments [Notifications](diagram/CA-Notifications.jpeg) <li> Quality-focused retention (vs. volume acquisition)<ul>|
 
 ## High Level Functional Requirements
 ### Booking
@@ -56,7 +56,7 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 ## [Architecture Characteristics](diagram/architecture-characteristics.pdf) 
 * **Low Latency**: The system must provide an estimated hourly rate for a rental request within 30 seconds of the user's query.
 * **Strong Consistency (or Reservation Lock)**: A single rental request must be matched with exactly one available vehicle. This match must be exclusively held (or locked) for that user for 1 minute, during which time the user can accept or decline the offer.
-* **Scalability**: The system must be capable of processing 100 transactions per second (TPS), specifically for location updates. It must also be designed to support a 30% growth in this capacity annually for the next five years.</li></ul>
+* **Scalability**: The system must be capable of processing 100 transactions per second (TPS), specifically for location updates. It must also be designed to support a 15% growth in this capacity annually for the next five years.</li></ul>
 
 ## [Vehicle Rental Flow](diagram/rental_flow.md) 
 
