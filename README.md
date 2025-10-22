@@ -16,6 +16,8 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 | Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0 [Flow](diagram/CA-Returns-Flow.jpeg) <li>Predict / suggest amount of battery packs fleet needs to carry <li>Predit / suggest battery inventory at service centers<li>Optimize route planning for fleet (battery swap) <ul>|
 | Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 15% YoY <li>Market right product to right customer segments [Notifications](diagram/CA-Notifications.jpeg) <li> Quality-focused retention (vs. volume acquisition)<ul>|
 
+## [AI Overview](solution/ai_overview.md) 
+
 ## High Level Functional Requirements
 ### Booking
 * Ability to browse and reserve vehicles
