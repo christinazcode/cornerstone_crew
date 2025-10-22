@@ -64,6 +64,8 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 * [Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
 * [Notifications Architecture](diagram/CA-Katas2025-Notifications-Architecture.png)
   * Batch processing vs Real Time notifications?
+* [Inventory Prediction Architecture](diagram/CA-Katas2025-Notifications-Inv.Mgmt.png)
+  
 ## How To
 ### Desired Outcome 1...
 #### ADR
