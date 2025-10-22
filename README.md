@@ -10,6 +10,11 @@
   - [Architecture characteristics](#architecture-characteristics)
   - [Vehicle Rental Flow](#vehicle-rental-flow)
   - [Architecture Diagram](#architecture-diagram)
+  - [AI Components](#ai-components)
+    - [Context](context)
+    - [Pricing Model and Fleet Allocation Model](#pricing-model-and-flett-allocation-model]
+    - [Customer Segmentation](#customer-segmentation)
+    - [Agentic Chatbots for Customer Service and Internal Work](#agentic-chatbots-for-customer-service-and-internal-work)
 
 ## Overview
 ## Team
@@ -79,6 +84,18 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 * [Notifications Architecture](diagram/CA-Katas2025-Notifications-Architecture.png)
   * Batch processing vs Real Time notifications?
 * [Inventory Prediction Architecture](diagram/CA-Katas2025-Inv.Mgmt.png)
+
+## AI Components
+### Context
+Pre-trained LLMs are trained on general text, primarily publicly available data. They don’t have knowledge of your private context that is not publicly available. You have the option to retrain them with your private context, which can be time-consuming and expensive. They also become outdated quickly once the next versions of the LLMs are released. RAG is a great way to incorporate your context into the context window of LLMs by indexing your content into a vector database. You can also build an AI agent to call your APIs to get access to your information.
+
+### Pricing Model and Fleet Allocation Model
+When MiniCorp starts, we can build a simple interface to guide the rental flow so that we can build up a customer base and collect data. The data collected in the first three months will be used to train two ML models: a pricing model and a fleet allocation model. The pricing model will dynamically calculate prices based on a base rate and any adjustments based on user profile, time of day, day of the week, time of year, etc. The fleet allocation model will determine the location and forecast vehicle needs so that the fleet management service can schedule appropriate tasks for service technicians to allocate the fleet to the appropriate locations to meet customer demand.
+
+### Customer Segmentation
+
+### Agentic Chatbots for Customer Service and Internal Work
+As we continue to accumulate data from our business, we can implement chatbots for internal and external users. The internal chatbot helps our employees with onboarding and learning our business. The external chatbot can be part of customer service to help answer users' questions and guide them through the rental journey. These chatbots will be agents that have access to both the vector database of our context and other public APIs to enhance the user journey. For instance, once a user asks a question, the agent can search Google to get information, call our pricing API to get a price estimation for a rental, and call the Google Calendar API to add the booking as an event in the user's calendar.
   
 ## How To
 ### Desired Outcome 1...
