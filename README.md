@@ -2,7 +2,8 @@
 ## Table of Contents
 - [Overview](#overview)
   - [Team](#team)
-- [Proglem definition](#problem-definition)    
+- [Problem definition](#problem-definition)
+  - [About MobilityCorp](#about-mobilitycorp)    
 
 ## Overview
 ## Team
