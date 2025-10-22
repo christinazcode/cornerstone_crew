@@ -11,8 +11,8 @@
   - [Vehicle Rental Flow](#vehicle-rental-flow)
   - [Architecture Diagram](#architecture-diagram)
   - [AI Components](#ai-components)
-    - [Context](context)
-    - [Pricing Model and Fleet Allocation Model](#pricing-model-and-flett-allocation-model]
+    - [Context](#context)
+    - [Pricing Model and Fleet Allocation Model](#pricing-model-and-flett-allocation-model)
     - [Customer Segmentation](#customer-segmentation)
     - [Agentic Chatbots for Customer Service and Internal Work](#agentic-chatbots-for-customer-service-and-internal-work)
 
