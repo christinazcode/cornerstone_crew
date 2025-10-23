@@ -97,6 +97,7 @@ When MiniCorp starts, we can build a simple interface to guide the rental flow s
 As we continue to accumulate data from our business, we can implement chatbots for internal and external users. The internal chatbot helps our employees with onboarding and learning our business. The external chatbot can be part of customer service to help answer users' questions and guide them through the rental journey. These chatbots will be agents that have access to both the vector database of our context and other public APIs to enhance the user journey. For instance, once a user asks a question, the agent can search Google to get information, call our pricing API to get a price estimation for a rental, and call the Google Calendar API to add the booking as an event in the user's calendar.
 ### Inventory Management Prediction
 ![Inventory Management](diagram/CA-Katas2025-Inv.Mgmt.png "Inventory Management")
+#### Use of AI in the solution
 The inventory management prediction model will be built as an aid to the back office to solve the "Anticipate Need" challenge. This model will help predict what vehicle types, their quantities, locations at which they need to be stationed along with the date and time. 
 
 The model will be trained on booking information (vehicle types, locations, date and time of pick up) and related dimensions like weather and events at the time of pick up and during the duration of the rental. When a return is initiated, this information is pulled and used to train the model. 
@@ -105,13 +106,15 @@ To predict future demand, the prediction service will query future booking infor
 
 #### Algorithm
 * Start off with <b>LightGBM</b> to build an MVP
-* Switch to <b>TFT</b> once we collect a large amount of data
-## How To
-### Desired Outcome 1...
-#### ADR
-<mark>TODO<mark>
-### Desired Outcome 2...
-#### ADR
-<mark>TODO<mark>
+* Switch to <b>TFT</b> once we collect a large amount of data & transition to a feature store like Vertex AI
+#### ADR 1
+<b>Title: Data Freshness - how frequently to update weather/events data</b>
+<b>Context:</b> We need to decide if we should pull the external data like weather, events information once a day vs more frequently. MobilityCorp's business is highly transactional. They rely on short rental timeframes. While pulling data once a day (or less frequently) will be less costly, updating this data more frequently will improve accuracy vastly.
+<b>Decision:</b> We decided to pull data once an hour and only during the work day (8 - 5). Even though this will incur more costs, the accuracy that this provides will far outweigh the cost benefits of refreshing data once a day. 
+#### ADR 2
+<b>Title: Streaming vs Batch - how frequently should we push updates to the model</b>
+<b>Context:</b> While batch updating the training data will prove to be cost effective, streaming/near-live updates from booking and returns and weather/events information will enable the business to pivot quickly.  
+<b>Decision:</b> Given the fast turnaround times between pick ups and returns, we felt the need to use streaming data to be a non negotiable factor in this architecture. The booking and return service will be set up to push events to a queue to be consumed by the inventory management model  
+
 
 ## [AI Overview](solution/ai_overview.md) 
