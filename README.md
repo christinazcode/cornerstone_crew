@@ -108,12 +108,12 @@ To predict future demand, the prediction service will query future booking infor
 * Start off with <b>LightGBM</b> to build an MVP
 * Switch to <b>TFT</b> once we collect a large amount of data & transition to a feature store like Vertex AI
 #### ADR 1
-<b>Title: Data Freshness - how frequently to update weather/events data</b>
-<b>Context:</b> We need to decide if we should pull the external data like weather, events information once a day vs more frequently. MobilityCorp's business is highly transactional. They rely on short rental timeframes. While pulling data once a day (or less frequently) will be less costly, updating this data more frequently will improve accuracy vastly.
+<b>Title: Data Freshness - how frequently to update weather/events data</b><br><br>
+<b>Context:</b> We need to decide if we should pull the external data like weather, events information once a day vs more frequently. MobilityCorp's business is highly transactional. They rely on short rental timeframes. While pulling data once a day (or less frequently) will be less costly, updating this data more frequently will improve accuracy vastly.<br><br>
 <b>Decision:</b> We decided to pull data once an hour and only during the work day (8 - 5). Even though this will incur more costs, the accuracy that this provides will far outweigh the cost benefits of refreshing data once a day. 
 #### ADR 2
-<b>Title: Streaming vs Batch - how frequently should we push updates to the model</b>
-<b>Context:</b> While batch updating the training data will prove to be cost effective, streaming/near-live updates from booking and returns and weather/events information will enable the business to pivot quickly.  
+<b>Title: Streaming vs Batch - how frequently should we push updates to the model</b><br><br>
+<b>Context:</b> While batch updating the training data will prove to be cost effective, streaming/near-live updates from booking and returns and weather/events information will enable the business to pivot quickly.<br><br>
 <b>Decision:</b> Given the fast turnaround times between pick ups and returns, we felt the need to use streaming data to be a non negotiable factor in this architecture. The booking and return service will be set up to push events to a queue to be consumed by the inventory management model  
 
 
