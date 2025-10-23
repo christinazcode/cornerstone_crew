@@ -113,7 +113,8 @@ To predict future demand, the prediction service will query future booking infor
 
 ### Fleet Management Model
 ![Fleet Management](diagram/CA-Katas2025-FleetMgmt.png "Fleet Management")
-Fleet is the vehicles that MobilityCorp uses to move their rental vehicles and batteries around to pick up locations. The Fleet Management Model is a Neural Network that will be trained on fleet's predicted and actual routes to predict fleet routes and which service centers to move the fleet to based on inventory forecast and past fleet routes taken. The model will also consider abandoned vehicles data to indicate to the driver to pick up any vehicles that have been left at non drop off spots due to malfunction, battery outage etc. 
+#### Use of AI in the solution
+Fleet is the vehicles that MobilityCorp uses to move their rental vehicles and batteries around to pick up locations. The Fleet Management Model will be trained on fleet's predicted and actual routes to predict fleet routes and which service centers to move the fleet to based on inventory forecast and past fleet routes taken. The model will also consider abandoned vehicles data to indicate to the driver to pick up any vehicles that have been left at non drop off spots due to malfunction, battery outage etc. 
 #### ADR 1
 <b>Title: Optimization and Prediction vs just optimization</b><br><br>
 <b>Context:</b> Should we only provide route optimization based on demand and fleet availability or should the system be able to predict routes? While route optimization is a first step, this doesn't offer the added value that comes with prediction that enables the company to move fleet vehicles to locations and preplan routes for future<br><br>
