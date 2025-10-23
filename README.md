@@ -87,6 +87,7 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 ## AI Components
 ### Context
 Pre-trained LLMs are trained on general text, primarily publicly available data. They don’t have knowledge of your private context that is not publicly available. You have the option to retrain them with your private context, which can be time-consuming and expensive. They also become outdated quickly once the next versions of the LLMs are released. RAG is a great way to incorporate your context into the context window of LLMs by indexing your content into a vector database. You can also build an AI agent to call your APIs to get access to your information.
+#### [AI Overview](solution/ai_overview.md)
 
 ### Pricing Model
 When MobilityCorp starts, we can build a simple interface to guide the rental flow so that we can build up a customer base and collect data. The data collected in the first three months will be used to train an ML model for price prediction. The pricing model will dynamically calculate prices based on a base rate and any adjustments based on user profile, time of day, day of the week, time of year, etc. 
@@ -123,5 +124,3 @@ Fleet is the vehicles that MobilityCorp uses to move their rental vehicles and b
 
 ### Agentic Chatbots for Customer Service and Internal Work
 As we continue to accumulate data from our business, we can implement chatbots for internal and external users. The internal chatbot helps our employees with onboarding and learning our business. The external chatbot can be part of customer service to help answer users' questions and guide them through the rental journey. These chatbots will be agents that have access to both the vector database of our context and other public APIs to enhance the user journey. For instance, once a user asks a question, the agent can search Google to get information, call our pricing API to get a price estimation for a rental, and call the Google Calendar API to add the booking as an event in the user's calendar.
-
-## [AI Overview](solution/ai_overview.md) 
