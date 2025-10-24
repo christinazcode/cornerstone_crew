@@ -90,6 +90,8 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 |Market Right Products to Right Customers | [Customer Segmentation](#customer-segmentation) |
 | Offer Competitive Pricing | [Pricing Model](#pricing-model) |
 | Offer extended services including search, booking, calendar event management, etc. | [Agentic Chatbots for Customer Service](#agentic-chatbots-for-customer-service-and-internal-work)|
+| Simplify how riders discover, plan, and book their journeys| [Customer Engagement](#customer-engagement)|
+
 ## AI Components
 
 #### [AI Overview](solution/ai_overview.md)
