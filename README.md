@@ -128,4 +128,45 @@ As we continue to accumulate data from our business, we can implement chatbots f
 ![Agentic Chatbots Components](diagram/agentic_bot.jpg)
 
 ### Customer Engagement
+MobilityCorp’s Customer Engagement Module is designed to simplify how riders discover, plan, and book their journeys across multiple transportation modes—while staying connected through personalized, AI-driven experiences. The engagement ecosystem is powered by three integrated systems: Trip Planning & Dispatch, Identity & Subscription Management, and Marketing & Retention Platform.
+
+1. Channels of Engagement
+
+Customer engagement begins through two primary offerings:
+
+Custom-Built MobilityCorp App - a standalone, feature-rich mobile application that enables users to explore available vehicles, plan trips, and manage subscriptions end-to-end.
+
+Embedded Rider Options in Third-Party Apps — a lightweight integration model where MobilityCorp services are embedded within local transportation apps (e.g., a city train or public transit app). This allows customers to discover connected mobility options—such as last-mile bike or car rentals—directly from the apps they already use.
+
+Together, these channels ensure customers can begin their engagement journey seamlessly, regardless of where they start.
+
+2. Core Systems and Intelligent Services
+
+The customer experience within these channels is driven by three interconnected systems embedded in the application layer:
+
+a. Trip Planning and Dispatch
+The trip-planning engine integrates real-time maps, vehicle availability, and multimodal routing to create end-to-end journeys that combine public transport and MobilityCorp’s rental services.
+This system is powered by an AI-driven inventory prediction model, which continuously forecasts vehicle availability by analyzing demand signals—such as booking patterns, return times, and historical usage—across multiple data sources. This ensures customers always see accurate, real-time options and can confidently plan routes that include nearby bikes or cars.
+
+b. Social Login and Subscription Management
+Customers authenticate via federated identity providers such as Google, Meta, or Apple, ensuring frictionless sign-in and secure transactions. Once authenticated, users can subscribe to personalized mobility plans directly within the app, enabling flexible payment, auto-renewal, and reward-based loyalty features.
+Booking and return data are continuously fed back into the inventory prediction model, allowing for near real-time demand calibration and smarter ride availability across regions.
+
+c. Marketing and Retention Platform
+The marketing platform, powered by machine learning, identifies and re-engages lapsed or at-risk customers through the Customer Data Platform (CDP).
+Advanced segmentation models analyze behavioral patterns and churn indicators to deliver personalized offers and notifications, all aligned with user consent and privacy preferences.
+This continuous feedback loop between AI insights and customer engagement ensures sustained usage and supports MobilityCorp’s goal of expanding its customer footprint.
+
+3. AI-Driven Engagement Loop
+
+At the heart of this architecture lies an intelligent, data-driven feedback cycle:
+
+Inventory Prediction Model ensures vehicle availability and optimized routing.
+
+Subscription Data & Ride History enrich the demand model for precision forecasting.
+
+Marketing ML Segmentation keeps customers engaged through relevant offers and loyalty incentives.
+
+Together, these systems create a unified, AI-powered ecosystem—turning every customer interaction into a learning opportunity that refines MobilityCorp’s engagement and growth strategy.
+
 ![Customer Engagement and growth model](diagram/Mobility-Corp-Customer-Engagement.drawio.png "Fleet Management")
