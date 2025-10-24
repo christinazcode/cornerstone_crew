@@ -79,10 +79,7 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 
 ## [Vehicle Rental Flow](diagram/rental_flow.md) 
 
-## Architecture Diagram
-* [Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
-* [Notifications Architecture](diagram/CA-Katas2025-Notifications-Architecture.png)
-  * Batch processing vs Real Time notifications?
+## ![Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
 
 ## AI Components
 ### Context
