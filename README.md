@@ -13,8 +13,8 @@
   - [Architecture Diagram](#architecture-diagram)
   - [AI Components](#ai-components)
     - [Context](#context)
-    - [Pricing Model and Fleet Allocation Model](#pricing-model-and-fleet-allocation-model)
-    - [Invenstory Management Prediction](#invenstory-management-prediction)
+    - [Pricing Model](#pricing-model)
+    - [Inventory Management Prediction](#inventory-management-prediction)
     - [Customer Segmentation](#customer-segmentation)
     - [Agentic Chatbots for Customer Service and Internal Work](#agentic-chatbots-for-customer-service-and-internal-work)
 
