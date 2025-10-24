@@ -110,14 +110,8 @@ The model will be trained on booking information (vehicle types, locations, date
 
 To predict future demand, the prediction service will query future booking information, events and weather information and use the model to predict which vehicles need to be located where and when.
 
-#### ADR 1
-<b>Title: Data Freshness - how frequently to update weather/events data</b><br><br>
-<b>Context:</b> We need to decide if we should pull the external data like weather, events information once a day vs more frequently. MobilityCorp's business is highly transactional. They rely on short rental timeframes. While pulling data once a day (or less frequently) will be less costly, updating this data more frequently will improve accuracy vastly.<br><br>
-<b>Decision:</b> We decided to pull data once an hour and only during the work day (8 - 5). Even though this will incur more costs, the accuracy that this provides will far outweigh the cost benefits of refreshing data once a day. 
-#### ADR 2
-<b>Title: Streaming vs Batch - how frequently should we push updates to the model</b><br><br>
-<b>Context:</b> While batch updating the training data will prove to be cost effective, streaming/near-live updates from booking and returns and weather/events information will enable the business to pivot quickly.<br><br>
-<b>Decision:</b> Given the fast turnaround times between pick ups and returns, we felt the need to use streaming data to be a non negotiable factor in this architecture. The booking and return service will be set up to push events to a queue to be consumed by the inventory management model  
+#### [ADR001](ADRs/ADR001.md) 
+#### [ADR002](ADRs/ADR002.md)
 ### Battery Swap Prediction Model
 ![Battery Swap](diagram/CA-Katas2025-Battery.png "Battery Swap")
 #### Use of AI in the solution
@@ -126,18 +120,13 @@ The battery swap model is created to predict which vehicle's batteries need to b
 The model takes past trip information, related weather during these trips, battery nad vehicle information, future bookings and vehicle inventory prediction (how many vehicles at what locations and dates/times) and predicts which batteries need to be swapped for what vehicles.
 
 The model learns from "actual" swap data from technicians to improve its prediction
-#### ADR
-<b>Title: Real time vs batch prediction</b><br><br>
-<b>Context:</b> Should the prediction happen in real time or should there be a batch process that runs at given intervals to produce an updated prediction? While real time prediction is more accurate, it can also be extermely resource intensive since one of the inputs to the model is the output of another model (inventory management prediction). <br><br>
-<b>Decision:</b> Decision has been made to use batch processing and update the battery results once every 3 hours. MobilityCorp's business is highly transactional however, updating battery swap predictions every minute doesn't make sense and will not help the business much as the trucks that carry batteries cannot pivot and change pre-planned routes constantly 
+#### [ADR003](ADRs/ADR003.md)
 ### Fleet Management Model
 ![Fleet Management](diagram/CA-Katas2025-FleetMgmt.png "Fleet Management")
 #### Use of AI in the solution
 Fleet is the vehicles that MobilityCorp uses to move their rental vehicles and batteries around to pick up locations. The Fleet Management Model will be trained on fleet's predicted and actual routes to predict fleet routes and which service centers to move the fleet to based on inventory forecast and past fleet routes taken. The model will also consider abandoned vehicles data to indicate to the driver to pick up any vehicles that have been left at non drop off spots due to malfunction, battery outage etc. 
-#### ADR 1
-<b>Title: Optimization and Prediction vs just optimization</b><br><br>
-<b>Context:</b> Should we only provide route optimization based on demand and fleet availability or should the system be able to predict routes? While route optimization is a first step, this doesn't offer the added value that comes with prediction that enables the company to move fleet vehicles to locations and preplan routes for future<br><br>
-<b>Decision:</b> We decided to include both optimization and route prediction with the model. The added value of prediction means that the company can run much leaner and do not need to invest in human schedulers to plan routes. One thing we decided not to include is dynamic route planning based on predicted traffic patterns. We are assuming that any traffic patterns will be reoccurring and that these will be accounted for in the current model's "acutal route" parameters that are being fed into it.
+#### [ADR004](ADRs/ADR004.md)
+
 ### Customer Segmentation
 Understanding our customers is the key to increasing our user base. This information drives our targeted marketing, allows us to provide personalized customer services, and helps us increase market share. When we first start, we can use customer demographic information to anticipate their needs.
 
@@ -199,3 +188,4 @@ Marketing ML Segmentation keeps customers engaged through relevant offers and lo
 Together, these systems create a unified, AI-powered ecosystem—turning every customer interaction into a learning opportunity that refines MobilityCorp’s engagement and growth strategy.
 
 ![Customer Engagement and growth model](diagram/Mobility-Corp-Customer-Engagement.drawio.png "Fleet Management")
+
