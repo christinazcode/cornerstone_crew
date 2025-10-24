@@ -119,6 +119,11 @@ Fleet is the vehicles that MobilityCorp uses to move their rental vehicles and b
 <b>Context:</b> Should we only provide route optimization based on demand and fleet availability or should the system be able to predict routes? While route optimization is a first step, this doesn't offer the added value that comes with prediction that enables the company to move fleet vehicles to locations and preplan routes for future<br><br>
 <b>Decision:</b> We decided to include both optimization and route prediction with the model. The added value of prediction means that the company can run much leaner and do not need to invest in human schedulers to plan routes. One thing we decided not to include is dynamic route planning based on predicted traffic patterns. We are assuming that any traffic patterns will be reoccurring and that these will be accounted for in the current model's "acutal route" parameters that are being fed into it.
 ### Customer Segmentation
+Understanding our customers is the key to increasing our user base. This information drives our targeted marketing, allows us to provide personalized customer services, and helps us increase market share. When we first start, we can use customer demographic information to anticipate their needs.
+
+Here are two target customer groups we can start with:
+
+
 
 ### Agentic Chatbots for Customer Service and Internal Work
 As we continue to accumulate data from our business, we can implement chatbots for internal and external users. The internal chatbot helps our employees with onboarding and learning our business. The external chatbot can be part of customer service to help answer users' questions and guide them through the rental journey. These chatbots will be agents that have access to both the vector database of our context and other public APIs to enhance the user journey. For instance, once a user asks a question, the agent can search Google to get information, call our pricing API to get a price estimation for a rental, and call the Google Calendar API to add the booking as an event in the user's calendar.
