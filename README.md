@@ -6,6 +6,7 @@
   - [About MobilityCorp](#about-mobilitycorp)
   - [Challenges](#challenges)
   - [High Level Functional Requirements](#high-level-requirements)
+  - [Non-Functional Requirements](#non-functional-requirements)
 - [Solution](#solution)
   - [Architecture characteristics](#architecture-characteristics)
   - [Vehicle Rental Flow](#vehicle-rental-flow)
