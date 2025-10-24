@@ -35,9 +35,9 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 ### Challenges
 | Challenge | Details | Desired Outcome |
 |:--------  |:------- |:--------------- |
-| Anticipate Need | Right vehicles are not in the right place | <ul> <li>Right vehicle type at right location/time [Inventory Management](diagram/CA-Management-InvMgmt.jpeg) <li>Proactive fleet repositioning [Fleet Allocation Model](#pricing-model-and-fleet-allocation-model) <li>Reduced idle time and wasted resources<ul>|
-| Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predict battery outage and route to nearest charging station / battery swap station to reduce battery outage to 0 [Flow](diagram/CA-Returns-Flow.jpeg) <li>Predict / suggest amount of battery packs fleet needs to carry <li>Predit / suggest battery inventory at service centers<li>Optimize route planning for fleet (battery swap) <li> Optimize service technician problem-solving capabilities [Agentic Chatbots for Internal Work](#agentic-chatbots-for-customer-service-and-internal-work) <li> [Fleet Allocation Model](#pricing-model-and-fleet-allocation-model) <ul>|
-| Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 15% YoY <li>Market right product to right customer segments [Notifications](diagram/CA-Notifications.jpeg) <li> Quality-focused retention (vs. volume acquisition) [Customer Segmentation](#customer-segmentation) <li>Offer competitive pricing to attract new customers and retain existing customers, thereby increasing customer lifetime value (CLV) [Pricing Model](#pricing-model-and-fleet-allocation-model) <li>Offer extended services including search, booking, calendar event management, etc. [Agentic Chatbots for Customer Service](#agentic-chatbots-for-customer-service-and-internal-work)<ul>|
+| Anticipate Need | Right vehicles are not in the right place | <ul> <li>Right vehicle type at right location/time <li>Proactive fleet repositioning <ul>|
+| Minimize battery outage | Electric vehicles running out of charge | <ul> <li>Predit / suggest battery inventory at service centers/and locations<li> Optimize service technician problem-solving capabilities <ul>|
+| Increase User Base | Customers to use our service more frequently and for daily commutes | <ul> <li>Increase user base by 15% YoY <li>Market right product to right customer segments <li>Offer  competitive pricing to attract new customers and retain existing customers, thereby increasing customer lifetime value (CLV) <li>Offer extended services including search, booking, calendar event management, etc.<ul>|
 
 ## High Level Functional Requirements
 ### Booking
@@ -84,7 +84,16 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 
 ## Architecture Diagram
 ![](diagram/mobilitycorp_architecture.jpg)
-
+### Solutions to Challenges
+| Desired Outcome | Solution |
+|:--------  |:--------------- |
+| Right vehicles at the right location | [Vehicle Inventory Prediction](#inventory-management-prediction)| 
+| Proactve Fleet Repositioning| [Fleet Repositioning Prediction](#fleet-management-model)|
+| Predict and suggest battery swap | [Battery Swap Prediction](#battery-swap-prediction-model)|
+| Optimize service technician problem-solving capabilities | [Agentic Chatbots for Internal Work](#agentic-chatbots-for-customer-service-and-internal-work)|
+|Market Right Products to Right Customers | [Customer Segmentation](#customer-segmentation) |
+| Offer Competitive Pricing | [Pricing Model](#pricing-model) |
+| Offer extended services including search, booking, calendar event management, etc. | [Agentic Chatbots for Customer Service](#agentic-chatbots-for-customer-service-and-internal-work)|
 ## AI Components
 ### Context
 Pre-trained LLMs are trained on general text, primarily publicly available data. They don’t have knowledge of your private context that is not publicly available. You have the option to retrain them with your private context, which can be time-consuming and expensive. They also become outdated quickly once the next versions of the LLMs are released. RAG is a great way to incorporate your context into the context window of LLMs by indexing your content into a vector database. You can also build an AI agent to call your APIs to get access to your information.
