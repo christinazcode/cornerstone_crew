@@ -1,8 +1,7 @@
 ![Team Header](diagram/Header_Image.png "Team Image")
 ## Table of Contents
+- [Team](#team)
 - [Overview](#overview)
-  - [Team](#team)
-- [Problem definition](#problem-definition)
   - [About MobilityCorp](#about-mobilitycorp)
   - [Challenges](#challenges)
   - [High Level Functional Requirements](#high-level-requirements)
@@ -93,8 +92,7 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 | Offer Competitive Pricing | [Pricing Model](#pricing-model) |
 | Offer extended services including search, booking, calendar event management, etc. | [Agentic Chatbots for Customer Service](#agentic-chatbots-for-customer-service-and-internal-work)|
 ## AI Components
-### Context
-Pre-trained LLMs are trained on general text, primarily publicly available data. They don’t have knowledge of your private context that is not publicly available. You have the option to retrain them with your private context, which can be time-consuming and expensive. They also become outdated quickly once the next versions of the LLMs are released. RAG is a great way to incorporate your context into the context window of LLMs by indexing your content into a vector database. You can also build an AI agent to call your APIs to get access to your information.
+
 #### [AI Overview](solution/ai_overview.md)
 
 ### Pricing Model
@@ -142,7 +140,8 @@ There is the risk that we may introduce discrimination in our approach. It is cr
 As we continue to accumulate data from our business, we can implement chatbots for internal and external users. The internal chatbot helps our employees with onboarding and learning our business. The external chatbot can be part of customer service to help answer users' questions and guide them through the rental journey. These chatbots will be agents that have access to both the vector database of our context and other public APIs to enhance the user journey. For instance, once a user asks a question, the agent can search Google to get information, call our pricing API to get a price estimation for a rental, and call the Google Calendar API to add the booking as an event in the user's calendar.
 
 ![Agentic Chatbots Components](diagram/agentic_bot.jpg)
-
+##### Context
+Pre-trained LLMs are trained on general text, primarily publicly available data. They don’t have knowledge of your private context that is not publicly available. You have the option to retrain them with your private context, which can be time-consuming and expensive. They also become outdated quickly once the next versions of the LLMs are released. RAG is a great way to incorporate your context into the context window of LLMs by indexing your content into a vector database. You can also build an AI agent to call your APIs to get access to your information.
 ### Customer Engagement
 MobilityCorp’s Customer Engagement Module is designed to simplify how riders discover, plan, and book their journeys across multiple transportation modes—while staying connected through personalized, AI-driven experiences. The engagement ecosystem is powered by three integrated systems: Trip Planning & Dispatch, Identity & Subscription Management, and Marketing & Retention Platform.
 
