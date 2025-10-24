@@ -129,6 +129,11 @@ Understanding our customers is the key to increasing our user base. This informa
 
 Here are two target customer groups we can start with:
 
+|Customer Segment|Population(EU)|Age|Perk Usage Times|Preferred Vehicle Type|
+|:-------------  |:------------ |:- |:-------------  |:-------------------- |
+|Budget Backpackers|8 - 12 mill|18 - 28|May-September, Holidays|Bikes, Scooters, Cars|
+|Urban Millennials|20-30 mill|25-40|Weekends, IKEA runs|Scooters, Cars, Vans|
+
 
 
 ### Agentic Chatbots for Customer Service and Internal Work
