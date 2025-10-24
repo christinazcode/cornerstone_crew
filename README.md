@@ -79,7 +79,7 @@ MobilityCorp is a one stop last mile eco friendly transport rental company opera
 
 ## [Vehicle Rental Flow](diagram/rental_flow.md) 
 
-## ![Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
+[Architecture Diagram](diagram/mobilitycorp_architecture.pdf)
 
 ## AI Components
 ### Context
