@@ -16,7 +16,7 @@
     - [Pricing Model](#pricing-model)
     - [Inventory Management Prediction](#inventory-management-prediction)
     - [Battery Swap Prediction Model](#battery-swap-prediction-model)
-    - [Fleet Management Model](#fleet-management-model
+    - [Fleet Management Model](#fleet-management-model)
     - [Customer Segmentation](#customer-segmentation)
     - [Agentic Chatbots for Customer Service and Internal Work](#agentic-chatbots-for-customer-service-and-internal-work)
 
