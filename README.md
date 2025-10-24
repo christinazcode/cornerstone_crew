@@ -134,7 +134,8 @@ Here are two target customer groups we can start with:
 |Budget Backpackers|8 - 12 mill|18 - 28|May-September, Holidays|Bikes, Scooters, Cars|
 |Urban Millennials|20-30 mill|25-40|Weekends, IKEA runs|Scooters, Cars, Vans|
 
-
+As we collect more customer data, we can use unsupervised learning algorithms such as k-means clustering to identify underlying characteristics that provide better signals.
+There is the risk that we may introduce discrimination in our approach. It is critical that we make sure our model can be interpreted to mitigate such risk.
 
 ### Agentic Chatbots for Customer Service and Internal Work
 As we continue to accumulate data from our business, we can implement chatbots for internal and external users. The internal chatbot helps our employees with onboarding and learning our business. The external chatbot can be part of customer service to help answer users' questions and guide them through the rental journey. These chatbots will be agents that have access to both the vector database of our context and other public APIs to enhance the user journey. For instance, once a user asks a question, the agent can search Google to get information, call our pricing API to get a price estimation for a rental, and call the Google Calendar API to add the booking as an event in the user's calendar.
